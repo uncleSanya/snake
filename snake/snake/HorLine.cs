@@ -8,21 +8,21 @@ namespace snake
 {
     class HorLine
     {
-        List<p_Draw> pline;
+        List<Point> pline;
 
         public HorLine()
         {
-            pline = new List<p_Draw>();
-            p_Draw p1 = new p_Draw(5, 5, '*');
-            p_Draw p2 = new p_Draw(6, 5, '*');
-            p_Draw p3 = new p_Draw(7, 5, '*');
+            pline = new List<Point>();
+            Point p1 = new Point(5, 5, '*');
+            Point p2 = new Point(6, 5, '*');
+            Point p3 = new Point(7, 5, '*');
             pline.Add(p1);
             pline.Add(p2);
             pline.Add(p3);
         }
         public void Draw()
         {
-            foreach (p_Draw i in pline)
+            foreach (Point i in pline)
             {
                 i.Draw();
             }

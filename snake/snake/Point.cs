@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace snake
 {
-    class p_Draw
+    class Point
     {
         public int x;
         public int y;
         public char s;
 
-        public p_Draw(int x, int y, char s)
+        public Point(int x, int y, char s)
         {
             this.x = x;
             this.y = y;
