@@ -16,7 +16,7 @@ namespace snake
             for (int x = xLeft; x <= xRight; x++)
             {
                 Point p = new Point(x,y,s);
-                p.Draw();
+                pline.Add(p);
             }
         }
         public void Draw()
