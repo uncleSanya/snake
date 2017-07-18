@@ -16,7 +16,7 @@ namespace snake
             Point p2 = new Point(1, 5, '@');
             p2.Draw();
 
-            HorLine line = new HorLine();
+            HorLine line = new HorLine(10,30,5,'&');
             line.Draw();
 
             Console.ReadKey();

@@ -10,21 +10,20 @@ namespace snake
     {
         List<Point> pline;
 
-        public HorLine()
+        public HorLine(int xLeft, int xRight, int y, char s)
         {
             pline = new List<Point>();
-            Point p1 = new Point(5, 5, '*');
-            Point p2 = new Point(6, 5, '*');
-            Point p3 = new Point(7, 5, '*');
-            pline.Add(p1);
-            pline.Add(p2);
-            pline.Add(p3);
+            for (int x = xLeft; x <= xRight; x++)
+            {
+                Point p = new Point(x,y,s);
+                p.Draw();
+            }
         }
         public void Draw()
         {
-            foreach (Point i in pline)
+            foreach (Point p in pline)
             {
-                i.Draw();
+                p.Draw();
             }
         }
     }
