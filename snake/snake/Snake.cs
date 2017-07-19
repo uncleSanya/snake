@@ -9,7 +9,7 @@ namespace snake
 {
     class Snake : Figure
     {
-        public Napr napr;
+        Napr napr;
 
         public Snake(Point tail, int lenght, Napr napr)
         {
@@ -40,6 +40,18 @@ namespace snake
             Point nextPoint = new Point(head);
             nextPoint.Move(1, napr);
             return nextPoint;
+        }
+
+        public void HandKey(ConsoleKey key)
+        {
+            if (key == ConsoleKey.LeftArrow)
+                napr = Napr.LEFT;
+            else if ((key == ConsoleKey.RightArrow))
+                napr = Napr.RIGHT;
+            else if ((key == ConsoleKey.UpArrow))
+                napr = Napr.UP;
+            else if ((key == ConsoleKey.DownArrow))
+                napr = Napr.DOWN;
         }
     }
 }

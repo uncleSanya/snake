@@ -38,14 +38,7 @@ namespace snake
                 if (Console.KeyAvailable)
                 {
                     ConsoleKeyInfo key = Console.ReadKey();
-                    if (key.Key == ConsoleKey.LeftArrow)
-                        zhora.napr = Napr.LEFT;
-                    else if ((key.Key == ConsoleKey.RightArrow))
-                        zhora.napr = Napr.RIGHT;
-                    else if ((key.Key == ConsoleKey.UpArrow))
-                        zhora.napr = Napr.UP;
-                    else if ((key.Key == ConsoleKey.DownArrow))
-                        zhora.napr = Napr.DOWN;
+                    zhora.HandKey(key.Key);
                 }
                 Thread.Sleep(200);
                 zhora.Move();
