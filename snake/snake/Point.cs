@@ -54,6 +54,13 @@ namespace snake
             Console.SetCursorPosition(x, y);
             Console.Write(s);
         }
+
+        public void Clear()
+        {
+            s = ' ';
+            Draw();
+        }
+
         public override string ToString()
         {
             return x+","+y+","+s;

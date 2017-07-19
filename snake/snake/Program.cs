@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace snake
@@ -31,6 +32,12 @@ namespace snake
             Point p = new Point(10,10,'*');
             Snake zhora = new Snake(p, 5, Napr.RIGHT);
             zhora.Draw();
+            for (int i = 0; i<30; i++)
+            {
+            zhora.Move();
+            Thread.Sleep(200);
+            }
+
 
             Console.ReadKey();
         }
