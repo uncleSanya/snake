@@ -29,7 +29,7 @@ namespace snake
             // Змейка
 
             Point p = new Point(10,10,'*');
-            Snake zhora = new Snake(p, 5, Napr.DOWN);
+            Snake zhora = new Snake(p, 5, Napr.RIGHT);
             zhora.Draw();
 
             Console.ReadKey();

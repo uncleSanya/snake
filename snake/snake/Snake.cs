@@ -11,7 +11,13 @@ namespace snake
     {
         public Snake(Point start, int lenght, Napr napr)
         {
-
+            pline = new List<Point>();
+            for (int i = 0; i<lenght; i++)
+            {
+                Point p = new Point(start);
+                p.Move(i, napr);
+                pline.Add(p);
+            }
         }
     }
 }
