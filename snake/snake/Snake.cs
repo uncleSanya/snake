@@ -9,7 +9,7 @@ namespace snake
 {
     class Snake : Figure
     {
-        Napr napr;
+        public Napr napr;
 
         public Snake(Point tail, int lenght, Napr napr)
         {
