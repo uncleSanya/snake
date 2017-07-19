@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace snake
 {
-    class HorLine
+    class HorLine : Figure
     {
-        List<Point> pline;
-
         public HorLine(int xLeft, int xRight, int y, char s)
         {
             pline = new List<Point>();
@@ -17,13 +15,6 @@ namespace snake
             {
                 Point p = new Point(x,y,s);
                 pline.Add(p);
-            }
-        }
-        public void Draw()
-        {
-            foreach (Point p in pline)
-            {
-                p.Draw();
             }
         }
     }

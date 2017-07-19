@@ -10,23 +10,20 @@ namespace snake
     {
         static void Main(string[] args)
         {
-            /*Point p1 = new Point(4,9,'$');
-            p1.Draw();
+            Console.SetWindowSize(80,25);
+            Console.SetBufferSize(80,25);
 
-            Point p2 = new Point(1, 5, '@');
-            p2.Draw();*/
+            HorLine upline = new HorLine(0,78,0,'*');
+            upline.Draw();
 
-            HorLine line = new HorLine(10,50,5,'-');
-            line.Draw();
+            VertLine leftline = new VertLine(0, 0, 24, '*');
+            leftline.Draw();
 
-            VertLine newline = new VertLine(10, 5, 25, '|');
-            newline.Draw();
+            HorLine downline = new HorLine(0, 78, 24, '*');
+            downline.Draw();
 
-            HorLine line1 = new HorLine(10, 50, 25, '-');
-            line1.Draw();
-
-            VertLine newline1 = new VertLine(50, 5, 25, '|');
-            newline1.Draw();
+            VertLine rightline = new VertLine(78, 0, 24, '*');
+            rightline.Draw();
 
             Console.ReadKey();
         }
