@@ -19,6 +19,9 @@ namespace snake
             HorLine line = new HorLine(10,30,5,'&');
             line.Draw();
 
+            VertLine newline = new VertLine(20, 5, 15, '&');
+            newline.Draw();
+
             Console.ReadKey();
         }
     }
